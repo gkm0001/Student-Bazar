@@ -220,6 +220,8 @@ header{
       font-weight: 800;
       background: rgba(223, 78, 78, 1);
       color: #FFFFFF;
+      overflow: visible;
+       cursor: pointer;
 }
 
 .main-right {
@@ -268,6 +270,7 @@ header{
       font-weight: 800;
      background-color: #128C7E;
      color: #FFFFFF;
+     cursor: pointer;
 }
 
 .join-telegrma-btn{
@@ -277,6 +280,7 @@ header{
       font-weight: 800;
      background-color:  #0088cc;
      color: #FFFFFF;
+     cursor: pointer;
      
 }
 .text-below-btn {
@@ -306,14 +310,22 @@ header{
       
 }
 .image-grid1{
-     /* background-color: #d54242; */
+     
      height: 60vh;
      width: 48vw;
      overflow: hidden;
+     transition: all ease 0.6s;
+      
+}
+
+.image-grid1:hover{
+     transform:  scale(1.05);
+     z-index: 2;
 }
 .image-grid2{
      display: grid;
      grid-gap: 2px;
+    
      
 }
  
@@ -321,13 +333,25 @@ header{
      width:  35vw;
     height: 30vh;
      overflow: hidden;
+     transition: all ease 0.6s;
 }
+
+.image-grid21:hover{
+     transform:  scale(1.05);
+     z-index: 2;
+}
+
 .image-grid22{
      width:  35vw;
      height: 30vh;
      overflow: hidden;
+     transition: all ease 0.6s;
 }
 
+.image-grid22:hover{
+     transform:  scale(1.05);
+     z-index: 2;
+}
 .bottom-div{
        width: 85vw;
        display: flex;
