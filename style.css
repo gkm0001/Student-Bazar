@@ -210,39 +210,93 @@ header{
  
 
 .buy-now-btn{
+     
       font-size: 30px;
       padding: 10px 55px;
       font-weight: 800;
       background: rgba(223, 78, 78, 1);
       color: #FFFFFF;
       overflow: visible;
-       cursor: pointer;
+      cursor: pointer;
         
 }
-.buy-now-btn:hover{
-       
-     border-color: #ad1313;
-     border-radius: 2px solid black;
-     color:rgb(229, 206, 206);
-     box-shadow: 0 0 0 rgb(179, 22, 22);
-     animation: box 3s infinite;
+ 
 
-}
 
-@keyframes box {
-
-     0%{
-            box-shadow: #1111c7;
-     }
-     50%{
-          box-shadow:0 0 100px;
-     }
-     100%{
-           box-shadow: #0a0abc;
-     }
-       
-}
-
+.btn a {
+     text-decoration: none;
+     text-transform: uppercase;
+     font-size: 30px;
+ }
+ .btn a span {
+     padding: 15px;
+     transition: .5s;
+     position: relative;
+ }
+ .btn a span:nth-child(1) {
+     color: #fff;
+     background: #262626;
+ }
+ .btn a span:nth-child(2) {
+     color: #fff;
+     background: #ff3636;
+ }
+ .btn a span:nth-child(1):before {
+     content: attr(data-attr);
+     position: absolute;
+     top: 0;
+     left: 0;
+     background: #ff3636;
+     padding: 15px;
+     transition: 0.5S;
+     transform-origin: top;
+     transform: rotateX(90deg) translateY(-50%);
+ }
+ .btn a:hover span:nth-child(1):before {
+     transform: rotateX(0deg) translateY(0%);
+ } 
+ .btn a span:nth-child(2):before {
+     content: attr(data-attr);
+     position: absolute;
+     top: 0;
+     left: 0;
+     background: #262626;
+     padding: 15px;
+     transition: 0.5S;
+     transform-origin: bottom;
+     transform: rotateX(90deg) translateY(50%);
+ }
+ .btn a:hover span:nth-child(2):before {
+     transform: rotateX(0deg) translateY(0%);
+ } 
+ .btn a  span:nth-child(1):after {
+   content: attr(data-attr);
+   padding: 15px;
+   position: absolute;
+   top: 0;
+   left: 0;
+   background: #262626;
+   transform-origin: bottom;
+   transform: rotateX(0deg) translateY(0%);
+   transition: 0.5s;
+ }
+ .btn a:hover span:nth-child(1):after {
+   transform: rotateX(90deg) translateY(50%);
+ }
+ .btn a span:nth-child(2):after {
+     content: attr(data-attr);
+     position: absolute;
+     top: 0;
+     left: 0;
+     background: #ff3636;
+     padding: 15px;
+     transition: 0.5S;
+     transform-origin: top;
+     transform: rotateX(0deg) translateY(0%);
+ }
+ .btn a:hover span:nth-child(2):after {
+     transform: rotateX(90deg) translateY(-50%);
+ } 
  
  
 
