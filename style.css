@@ -13,7 +13,17 @@ body{
      background: linear-gradient(to left, rgb(95, 34, 34), rgb(9, 1, 1), rgb(58, 16, 16));
      
 }
- 
+
+ #preloder{
+       background:#000 url(images/Netflix_LoadTime.gif) no-repeat center;
+       background-size: 40%;
+       height: 100vh;
+       width: 100%;
+       position: fixed;
+       z-index: 100;
+ }
+   
+
 header{
       
      background-color: #131313;
@@ -97,11 +107,14 @@ header{
  }
  
  
+ 
 .Login,.Wish,.Cart{
          display: flex;
          flex-direction: column;
          align-items: center;     
 }
+ 
+ 
  
 .Login img{
           
@@ -131,8 +144,14 @@ header{
          color: #FFFFFF;
          font-weight: 700;
          text-decoration: none;
+         transition: all 0.4s;
           
          
+}
+
+
+.Login-text:hover,.Cart-text:hover,.Wish-text:hover{
+      color:#d52f0a
 }
 
 .Underline{
@@ -157,6 +176,14 @@ header{
 .Home{
       color: white;
       font-size: 15px;
+      transition: all 0.4s;
+      cursor: pointer;
+}
+
+.Home:hover{
+      
+     color:#d52f0a;
+      
 }
 
  
@@ -221,7 +248,9 @@ header{
         
 }
  
-
+.btn{
+      margin-top: 30px;
+}
 
 .btn a {
      text-decoration: none;
@@ -346,6 +375,7 @@ header{
      background-color: #128C7E;
      color: #FFFFFF;
      cursor: pointer;
+     transition-duration: 0.4s;
 }
 
 .join-telegrma-btn{
@@ -356,7 +386,20 @@ header{
      background-color:  #0088cc;
      color: #FFFFFF;
      cursor: pointer;
+     transition-duration: 0.4s;
      
+}
+.whatsapp-btn:hover{
+     background-color: #27a83a;
+     box-shadow: 0px 5px 5px rgba(11, 209, 61, 0.4);
+     color: #8c8686;
+     transform: translateY(-7px);
+}
+ .join-telegrma-btn:hover{
+     background-color: #238ce8;
+     box-shadow: 0px 5px 5px rgba(46, 229, 157, 0.4);
+     color: #1bbdda;
+     transform: translateY(-7px);
 }
 .text-below-btn {
         
